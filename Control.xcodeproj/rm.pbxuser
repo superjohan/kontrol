@@ -6,10 +6,20 @@
 			903C77741167AABA0079EE29 /* Control */,
 		);
 	};
+	1F3B9A2C0EF2145700286867 /* ControlAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 745}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 306}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 903C77741167AABA0079EE29 /* Control */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Control */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Control */,
+		);
 		codeSenseManager = 903C779E1167AABF0079EE29 /* Code sense */;
 		executables = (
 			903C77741167AABA0079EE29 /* Control */,

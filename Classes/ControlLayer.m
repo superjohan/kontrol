@@ -115,18 +115,30 @@
 		if(sequencePosition == 1) {
 			button1Sprite.opacity = 255;
 			[button1 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
+			[button2 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
+			[button3 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button3.scaleX*(-1) scaleY:1]];
+			[button4 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button4.scaleY*(-1)]];
 			sequencePosition++;
 		} else if(sequencePosition == 2) {
 			button2Sprite.opacity = 255;
 			[button2 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
+			[button3 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
+			[button4 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button4.scaleX*(-1) scaleY:1]];
+			[button1 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button1.scaleY*(-1)]];
 			sequencePosition++;
 		} else if(sequencePosition == 3) {
 			button3Sprite.opacity = 255;
 			[button3 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
+			[button4 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
+			[button1 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button1.scaleX*(-1) scaleY:1]];
+			[button2 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button2.scaleY*(-1)]];
 			sequencePosition++;
 		} else if(sequencePosition == 4) {
 			button4Sprite.opacity = 255;
 			[button4 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
+			[button1 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
+			[button2 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button2.scaleX*(-1) scaleY:1]];
+			[button3 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button3.scaleY*(-1)]];
 			sequencePosition = 1;
 		}
 	}

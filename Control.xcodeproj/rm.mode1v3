@@ -326,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>903C78691167C32E0079EE29</string>
+										<string>903C787D1167CB6E0079EE29</string>
 										<key>history</key>
 										<array>
 											<string>903C78211167B9BE0079EE29</string>
@@ -534,10 +534,10 @@
 	<array>
 		<string>903C78281167B9BE0079EE29</string>
 		<string>903C78291167B9BE0079EE29</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>903C779B1167AABF0079EE29</string>
 		<string>/Users/rm/Dropbox/Projects/Control/Control.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 55 1436 823 0 0 1440 878 </string>
@@ -919,7 +919,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

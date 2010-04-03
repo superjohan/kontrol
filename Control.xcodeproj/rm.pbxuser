@@ -23,7 +23,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 903C77741167AABA0079EE29 /* Control */;
-		activeSDKPreference = iphoneos3.1.3;
+		activeSDKPreference = iphonesimulator3.0;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Control */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Control */,
@@ -85,6 +85,12 @@
 			903C78671167C32E0079EE29 /* PBXTextBookmark */ = 903C78671167C32E0079EE29 /* PBXTextBookmark */;
 			903C78681167C32E0079EE29 /* PBXTextBookmark */ = 903C78681167C32E0079EE29 /* PBXTextBookmark */;
 			903C78691167C32E0079EE29 /* PBXTextBookmark */ = 903C78691167C32E0079EE29 /* PBXTextBookmark */;
+			903C786C1167C9810079EE29 /* PBXTextBookmark */ = 903C786C1167C9810079EE29 /* PBXTextBookmark */;
+			903C786F1167C9D40079EE29 /* PBXTextBookmark */ = 903C786F1167C9D40079EE29 /* PBXTextBookmark */;
+			903C78721167CA1E0079EE29 /* PBXTextBookmark */ = 903C78721167CA1E0079EE29 /* PBXTextBookmark */;
+			903C78771167CAB30079EE29 /* PBXTextBookmark */ = 903C78771167CAB30079EE29 /* PBXTextBookmark */;
+			903C787A1167CAE80079EE29 /* PBXTextBookmark */ = 903C787A1167CAE80079EE29 /* PBXTextBookmark */;
+			903C787D1167CB6E0079EE29 /* PBXTextBookmark */ = 903C787D1167CB6E0079EE29 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 903C779D1167AABF0079EE29 /* Source Control */;
 		userBuildSettings = {
@@ -160,9 +166,9 @@
 	};
 	903C77CD1167B21C0079EE29 /* ControlLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1167, 2210}}";
-			sepNavSelRange = "{5027, 0}";
-			sepNavVisRange = "{3945, 1206}";
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 2314}}";
+			sepNavSelRange = "{5736, 0}";
+			sepNavVisRange = "{3945, 2051}";
 		};
 	};
 	903C78211167B9BE0079EE29 /* PBXTextBookmark */ = {
@@ -290,7 +296,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 116";
 		rLen = 0;
-		rLoc = 5510;
+		rLoc = 6534;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 2889;
@@ -320,7 +326,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 116";
 		rLen = 0;
-		rLoc = 5510;
+		rLoc = 6534;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 2858;
@@ -360,7 +366,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 101";
 		rLen = 0;
-		rLoc = 4275;
+		rLoc = 4531;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 2827;
@@ -410,7 +416,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 141";
 		rLen = 0;
-		rLoc = 4872;
+		rLoc = 5896;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 3818;
@@ -420,9 +426,69 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 154";
 		rLen = 0;
-		rLoc = 5027;
+		rLoc = 6051;
 		rType = 0;
 		vrLen = 1206;
+		vrLoc = 3945;
+	};
+	903C786C1167C9810079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 118";
+		rLen = 0;
+		rLoc = 4406;
+		rType = 0;
+		vrLen = 1201;
+		vrLoc = 3945;
+	};
+	903C786F1167C9D40079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 133";
+		rLen = 0;
+		rLoc = 5507;
+		rType = 0;
+		vrLen = 1398;
+		vrLoc = 3945;
+	};
+	903C78721167CA1E0079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 133";
+		rLen = 0;
+		rLoc = 5560;
+		rType = 0;
+		vrLen = 1398;
+		vrLoc = 3945;
+	};
+	903C78771167CAB30079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 119";
+		rLen = 0;
+		rLoc = 4404;
+		rType = 0;
+		vrLen = 1456;
+		vrLoc = 3945;
+	};
+	903C787A1167CAE80079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 119";
+		rLen = 0;
+		rLoc = 4394;
+		rType = 0;
+		vrLen = 1473;
+		vrLoc = 3945;
+	};
+	903C787D1167CB6E0079EE29 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 141";
+		rLen = 0;
+		rLoc = 5736;
+		rType = 0;
+		vrLen = 2051;
 		vrLoc = 3945;
 	};
 }

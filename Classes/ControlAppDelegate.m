@@ -8,7 +8,7 @@
 
 #import "ControlAppDelegate.h"
 #import "cocos2d.h"
-#import "HelloWorldScene.h"
+#import "ControlScene.h"
 
 @implementation ControlAppDelegate
 
@@ -51,7 +51,7 @@
 	[window makeKeyAndVisible];		
 		
 		
-	[[CCDirector sharedDirector] runWithScene: [HelloWorld scene]];
+	[[CCDirector sharedDirector] runWithScene: [ControlScene scene]];
 }
 
 

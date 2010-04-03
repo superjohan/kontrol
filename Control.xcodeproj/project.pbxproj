@@ -35,7 +35,6 @@
 		50674855107A3AF30090963A /* ZAttributedStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 50674852107A3AF30090963A /* ZAttributedStringPrivate.h */; };
 		506EDB88102F4C4000A389B3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EDB87102F4C4000A389B3 /* libz.dylib */; };
 		506EDBA5102F4C9F00A389B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EDBA4102F4C9F00A389B3 /* AVFoundation.framework */; };
-		506EDC31102F528A00A389B3 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 506EDC30102F528A00A389B3 /* HelloWorldScene.m */; };
 		506EE1A91030508200A389B3 /* libcocos2d libraries.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EE05E10304ED200A389B3 /* libcocos2d libraries.a */; };
 		50D3B09711498A370002F919 /* CCAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D3B00A11498A370002F919 /* CCAction.h */; };
 		50D3B09811498A370002F919 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D3B00B11498A370002F919 /* CCAction.m */; };
@@ -224,6 +223,10 @@
 		903C77C41167B0D60079EE29 /* control-chord2-6.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C77B01167B0D50079EE29 /* control-chord2-6.caf */; };
 		903C77C51167B0D60079EE29 /* control-chord2-7.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C77B11167B0D60079EE29 /* control-chord2-7.caf */; };
 		903C77C61167B0D60079EE29 /* control-chord2-8.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C77B21167B0D60079EE29 /* control-chord2-8.caf */; };
+		903C77C91167B18D0079EE29 /* ControlScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C77C81167B18D0079EE29 /* ControlScene.m */; };
+		903C77CB1167B2050079EE29 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 903C77CA1167B2050079EE29 /* background.png */; };
+		903C77CE1167B21C0079EE29 /* ControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */; };
+		903C77DB1167B3D40079EE29 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 903C77DA1167B3D40079EE29 /* block.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -270,8 +273,6 @@
 		50674852107A3AF30090963A /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
 		506EDB87102F4C4000A389B3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		506EDBA4102F4C9F00A389B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		506EDC2F102F528A00A389B3 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
-		506EDC30102F528A00A389B3 /* HelloWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldScene.m; sourceTree = "<group>"; };
 		506EE05E10304ED200A389B3 /* libcocos2d libraries.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2d libraries.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D3B00A11498A370002F919 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		50D3B00B11498A370002F919 /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
@@ -461,6 +462,12 @@
 		903C77B01167B0D50079EE29 /* control-chord2-6.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-chord2-6.caf"; sourceTree = "<group>"; };
 		903C77B11167B0D60079EE29 /* control-chord2-7.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-chord2-7.caf"; sourceTree = "<group>"; };
 		903C77B21167B0D60079EE29 /* control-chord2-8.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-chord2-8.caf"; sourceTree = "<group>"; };
+		903C77C71167B18D0079EE29 /* ControlScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlScene.h; sourceTree = "<group>"; };
+		903C77C81167B18D0079EE29 /* ControlScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlScene.m; sourceTree = "<group>"; };
+		903C77CA1167B2050079EE29 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		903C77CC1167B21C0079EE29 /* ControlLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlLayer.h; sourceTree = "<group>"; };
+		903C77CD1167B21C0079EE29 /* ControlLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlLayer.m; sourceTree = "<group>"; };
+		903C77DA1167B3D40079EE29 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -557,10 +564,12 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				506EDC2F102F528A00A389B3 /* HelloWorldScene.h */,
-				506EDC30102F528A00A389B3 /* HelloWorldScene.m */,
 				1F3B9A2C0EF2145700286867 /* ControlAppDelegate.h */,
 				1F3B9A2B0EF2145700286867 /* ControlAppDelegate.m */,
+				903C77C71167B18D0079EE29 /* ControlScene.h */,
+				903C77C81167B18D0079EE29 /* ControlScene.m */,
+				903C77CC1167B21C0079EE29 /* ControlLayer.h */,
+				903C77CD1167B21C0079EE29 /* ControlLayer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -825,6 +834,8 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				903C77DA1167B3D40079EE29 /* block.png */,
+				903C77CA1167B2050079EE29 /* background.png */,
 				903C779F1167B0CC0079EE29 /* control-1.caf */,
 				903C77A01167B0CD0079EE29 /* control-2.caf */,
 				903C77A11167B0CD0079EE29 /* control-3.caf */,
@@ -1043,6 +1054,8 @@
 				903C77C41167B0D60079EE29 /* control-chord2-6.caf in Resources */,
 				903C77C51167B0D60079EE29 /* control-chord2-7.caf in Resources */,
 				903C77C61167B0D60079EE29 /* control-chord2-8.caf in Resources */,
+				903C77CB1167B2050079EE29 /* background.png in Resources */,
+				903C77DB1167B3D40079EE29 /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1055,7 +1068,8 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1F3B9A2D0EF2145700286867 /* ControlAppDelegate.m in Sources */,
-				506EDC31102F528A00A389B3 /* HelloWorldScene.m in Sources */,
+				903C77C91167B18D0079EE29 /* ControlScene.m in Sources */,
+				903C77CE1167B21C0079EE29 /* ControlLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

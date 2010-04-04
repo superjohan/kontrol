@@ -61,11 +61,6 @@ const float kActionDuration = .2;
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-7.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-8.caf"];
 		
-		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error1.caf"];
-		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error2.caf"];
-		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error3.caf"];
-		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error4.caf"];
-
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"control-base.m4a"];
 		
 		error1 = [CCSprite spriteWithFile:@"error1.png"];
@@ -176,7 +171,7 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 2)
+			if(songPosition == 3)
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -198,7 +193,7 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 2)
+			if(songPosition == 3)
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -220,7 +215,7 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 2)
+			if(songPosition == 3)
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -245,7 +240,7 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 2)
+			if(songPosition == 3)
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition = 1;

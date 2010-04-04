@@ -45,6 +45,26 @@ const float kActionDuration = .2;
 		
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"control-base.m4a"];
 		
+		error1 = [CCSprite spriteWithFile:@"error1.png"];
+		error2 = [CCSprite spriteWithFile:@"error2.png"];
+		error3 = [CCSprite spriteWithFile:@"error3.png"];
+		error4 = [CCSprite spriteWithFile:@"error4.png"];
+		
+		error1.position = ccp(160,505);
+		error2.position = ccp(160,495);
+		error3.position = ccp(160,485);
+		error4.position = ccp(160,481);
+		
+		error1.opacity = 0;
+		error2.opacity = 0;
+		error3.opacity = 0;
+		error4.opacity = 0;
+				
+		[self addChild:error1 z:1];
+		[self addChild:error2 z:1];
+		[self addChild:error3 z:1];
+		[self addChild:error4 z:1];
+		
 		button1Sprite = [CCSprite spriteWithFile:@"block.png"];
 		button2Sprite = [CCSprite spriteWithFile:@"block.png"];
 		button3Sprite = [CCSprite spriteWithFile:@"block.png"];
@@ -77,6 +97,8 @@ const float kActionDuration = .2;
 		songStarted = NO;
 		chord2Wait = NO;
 		songPosition = 0;
+		errorTimer = 0;
+		errorType = 1;
 		
 		[self schedule:@selector(mainLoop:)];
 	}
@@ -137,6 +159,9 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
+			if(songPosition == 1)
+				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
 			sequencePosition++;
 		} 
 		else if(sequencePosition == 2)
@@ -156,6 +181,9 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
+			if(songPosition == 1)
+				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
 			sequencePosition++;
 		}
 		else if(sequencePosition == 3)
@@ -175,6 +203,9 @@ const float kActionDuration = .2;
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
+			if(songPosition == 1)
+				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
 			sequencePosition++;
 		}
 		else if(sequencePosition == 4)
@@ -188,12 +219,18 @@ const float kActionDuration = .2;
 			if(beatPlaying == 4)
 				[button4 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button4.scaleY*-1]];
 			
+			if(beatPlaying == 5)
+				[button4 runAction:[CCRotateBy actionWithDuration:.4 angle:360]];
+			
 			if(songPosition == 1)
-				[button1 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button1.scaleX*-1 scaleY:button1.scaleY*-1]];
+				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY*-1]];
 			
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
+			if(songPosition == 1)
+				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
 			sequencePosition = 1;
 		}
 	}
@@ -264,6 +301,57 @@ const float kActionDuration = .2;
 -(void)playBeat:(int)beatType
 {
 	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-%d.caf", beatType]];
+}
+
+- (void)onEnter
+{
+	// let's enable touch events
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
+	[super onEnter];
+}
+
+
+- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{	
+	CGPoint touchPoint = [touch locationInView:[touch view]];
+	
+	[self addError:touchPoint.x y:touchPoint.y];
+	return YES;
+}
+
+-(void)addError:(CGFloat)x y:(CGFloat)y
+{
+	if(errorType == 1)
+	{
+		error1.position = ccp(160,480-y);
+		error1.opacity = 128;
+		[error1 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
+		[error1 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+	}
+	if(errorType == 2)
+	{
+		error2.position = ccp(160,480-y);
+		error2.opacity = 128;
+		[error2 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
+		[error2 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+	}
+	if(errorType == 3)
+	{
+		error3.position = ccp(160,480-y);
+		error3.opacity = 128;
+		[error3 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
+		[error3 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+	}
+	if(errorType == 4)
+	{
+		error4.position = ccp(160,480-y);
+		error4.opacity = 128;
+		[error4 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
+		[error4 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+	}
+	errorType++;
+	if(errorType > 4)
+		errorType = 1;
 }
 
 @end

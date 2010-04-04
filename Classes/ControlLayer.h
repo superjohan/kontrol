@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 #import "SimpleAudioEngine.h"
 
-@interface ControlLayer : CCLayer
+@interface ControlLayer : CCLayer <CCTargetedTouchDelegate>
 {
 	CCMenuItem *button1;
 	CCMenuItem *button2;
@@ -22,13 +22,20 @@
 	CCSprite *button3Sprite;
 	CCSprite *button4Sprite;
 	
+	CCSprite *error1;
+	CCSprite *error2;
+	CCSprite *error3;
+	CCSprite *error4;
+	
 	float timer;
 	float sequenceTimer;
 	float buttonSequenceTimer;
+	float errorTimer;
 	
 	int beatPlaying;
 	int sequencePosition;
 	int songPosition;
+	int errorType;
 	
 	bool chord2Wait;
 	bool songStarted;
@@ -46,5 +53,7 @@
 
 -(void)playChord:(int)chordType;
 -(void)playBeat:(int)beatType;
+
+-(void)addError:(CGFloat)x y:(CGFloat)y;
 
 @end

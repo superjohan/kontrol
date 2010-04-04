@@ -229,6 +229,10 @@
 		903C77DB1167B3D40079EE29 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 903C77DA1167B3D40079EE29 /* block.png */; };
 		90472A2311688C300015B20D /* control-4.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90472A2211688C300015B20D /* control-4.caf */; };
 		90472A3E11688DDF0015B20D /* control-5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90472A3D11688DDF0015B20D /* control-5.caf */; };
+		90500CA711689FEC00A3E7B1 /* error1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90500CA311689FEB00A3E7B1 /* error1.png */; };
+		90500CA811689FEC00A3E7B1 /* error2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90500CA411689FEB00A3E7B1 /* error2.png */; };
+		90500CA911689FEC00A3E7B1 /* error3.png in Resources */ = {isa = PBXBuildFile; fileRef = 90500CA511689FEB00A3E7B1 /* error3.png */; };
+		90500CAA11689FEC00A3E7B1 /* error4.png in Resources */ = {isa = PBXBuildFile; fileRef = 90500CA611689FEC00A3E7B1 /* error4.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -472,6 +476,10 @@
 		903C77DA1167B3D40079EE29 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		90472A2211688C300015B20D /* control-4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-4.caf"; sourceTree = "<group>"; };
 		90472A3D11688DDF0015B20D /* control-5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-5.caf"; sourceTree = "<group>"; };
+		90500CA311689FEB00A3E7B1 /* error1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error1.png; sourceTree = "<group>"; };
+		90500CA411689FEB00A3E7B1 /* error2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error2.png; sourceTree = "<group>"; };
+		90500CA511689FEB00A3E7B1 /* error3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error3.png; sourceTree = "<group>"; };
+		90500CA611689FEC00A3E7B1 /* error4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error4.png; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -880,6 +888,10 @@
 		90472A2611688C400015B20D /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				90500CA311689FEB00A3E7B1 /* error1.png */,
+				90500CA411689FEB00A3E7B1 /* error2.png */,
+				90500CA511689FEB00A3E7B1 /* error3.png */,
+				90500CA611689FEC00A3E7B1 /* error4.png */,
 				903C77DA1167B3D40079EE29 /* block.png */,
 				903C77CA1167B2050079EE29 /* background.png */,
 			);
@@ -1080,6 +1092,10 @@
 				903C77DB1167B3D40079EE29 /* block.png in Resources */,
 				90472A2311688C300015B20D /* control-4.caf in Resources */,
 				90472A3E11688DDF0015B20D /* control-5.caf in Resources */,
+				90500CA711689FEC00A3E7B1 /* error1.png in Resources */,
+				90500CA811689FEC00A3E7B1 /* error2.png in Resources */,
+				90500CA911689FEC00A3E7B1 /* error3.png in Resources */,
+				90500CAA11689FEC00A3E7B1 /* error4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

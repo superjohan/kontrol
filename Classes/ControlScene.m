@@ -16,7 +16,6 @@
 	CCScene *scene = [CCScene node];
 	
 	CCSprite *background = [CCSprite spriteWithFile:@"background.png"];
-	[background setScale:480];
 	[background setPosition:ccp(160,240)];
 	[scene addChild:background z:0];
 	

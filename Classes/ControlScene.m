@@ -17,7 +17,9 @@
 	
 	CCSprite *background = [CCSprite spriteWithFile:@"background.png"];
 	[background setPosition:ccp(160,240)];
+	background.opacity = 0;
 	[scene addChild:background z:0];
+	[background runAction:[CCFadeIn actionWithDuration:2]];
 	
 	ControlLayer *control = [ControlLayer node];
 	[scene addChild:control z:1];

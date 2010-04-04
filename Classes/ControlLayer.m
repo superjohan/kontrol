@@ -92,8 +92,11 @@ const float kActionDuration = .2;
 
 		CCMenu *starMenu = [CCMenu menuWithItems:button1, button2, button3, button4, nil];
 		starMenu.position = CGPointZero;
+		starMenu.opacity = 0;
 		[self addChild:starMenu z:2];
 
+		[starMenu runAction:[CCFadeTo actionWithDuration:2 opacity:192]];
+		 
 		timer = 0;
 		sequenceTimer = 0;
 		beatPlaying = 1;

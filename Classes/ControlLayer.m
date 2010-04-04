@@ -43,6 +43,11 @@ const float kActionDuration = .2;
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord2-7.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord2-8.caf"];
 		
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error1.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error2.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error3.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error4.caf"];
+
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"control-base.m4a"];
 		
 		error1 = [CCSprite spriteWithFile:@"error1.png"];
@@ -321,12 +326,21 @@ const float kActionDuration = .2;
 
 -(void)addError:(CGFloat)x y:(CGFloat)y
 {
+	float errorGain = 1 - y / 480.0f;
+	float errorPan = 0;
+	
+	if(x < 160)
+		errorPan = (x / 160.0f) - 1;
+	else
+		errorPan = ((x - 160.0f) / 160.0f);
+
 	if(errorType == 1)
 	{
 		error1.position = ccp(160,480-y);
 		error1.opacity = 128;
 		[error1 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
-		[error1 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+		[error1 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];				
+		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error1.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 2)
 	{
@@ -334,6 +348,7 @@ const float kActionDuration = .2;
 		error2.opacity = 128;
 		[error2 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error2 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error2.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 3)
 	{
@@ -341,6 +356,7 @@ const float kActionDuration = .2;
 		error3.opacity = 128;
 		[error3 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error3 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error3.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 4)
 	{
@@ -348,6 +364,7 @@ const float kActionDuration = .2;
 		error4.opacity = 128;
 		[error4 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error4 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
+		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error4.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	errorType++;
 	if(errorType > 4)

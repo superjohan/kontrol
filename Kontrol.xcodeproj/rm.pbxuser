@@ -1,9 +1,9 @@
 // !$*UTF8*$!
 {
-	1D6058900D05DD3D006BFB54 /* Control */ = {
+	1D6058900D05DD3D006BFB54 /* Kontrol */ = {
 		activeExec = 0;
 		executables = (
-			903C77741167AABA0079EE29 /* Control */,
+			903C77741167AABA0079EE29 /* Kontrol */,
 		);
 	};
 	1F3B9A2B0EF2145700286867 /* ControlAppDelegate.m */ = {
@@ -22,15 +22,15 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 903C77741167AABA0079EE29 /* Control */;
+		activeExecutable = 903C77741167AABA0079EE29 /* Kontrol */;
 		activeSDKPreference = iphoneos3.1.3;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* Control */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Kontrol */;
 		addToTargets = (
-			1D6058900D05DD3D006BFB54 /* Control */,
+			1D6058900D05DD3D006BFB54 /* Kontrol */,
 		);
 		codeSenseManager = 903C779E1167AABF0079EE29 /* Code sense */;
 		executables = (
-			903C77741167AABA0079EE29 /* Control */,
+			903C77741167AABA0079EE29 /* Kontrol */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -173,6 +173,13 @@
 			90500DF11168C36900A3E7B1 /* PBXTextBookmark */ = 90500DF11168C36900A3E7B1 /* PBXTextBookmark */;
 			90500DF21168C36900A3E7B1 /* PBXTextBookmark */ = 90500DF21168C36900A3E7B1 /* PBXTextBookmark */;
 			90500DF31168C36900A3E7B1 /* PBXTextBookmark */ = 90500DF31168C36900A3E7B1 /* PBXTextBookmark */;
+			90500DF81168C63200A3E7B1 /* PBXTextBookmark */ = 90500DF81168C63200A3E7B1 /* PBXTextBookmark */;
+			90500DF91168C63200A3E7B1 /* PlistBookmark */ = 90500DF91168C63200A3E7B1 /* PlistBookmark */;
+			90500DFA1168C63200A3E7B1 /* PlistBookmark */ = 90500DFA1168C63200A3E7B1 /* PlistBookmark */;
+			90500E0F1168C73300A3E7B1 /* PlistBookmark */ = 90500E0F1168C73300A3E7B1 /* PlistBookmark */;
+			90500E101168C73300A3E7B1 /* PlistBookmark */ = 90500E101168C73300A3E7B1 /* PlistBookmark */;
+			90500E141168C77E00A3E7B1 /* PlistBookmark */ = 90500E141168C77E00A3E7B1 /* PlistBookmark */;
+			90500E191168C85600A3E7B1 /* PlistBookmark */ = 90500E191168C85600A3E7B1 /* PlistBookmark */;
 		};
 		sourceControlManager = 903C779D1167AABF0079EE29 /* Source Control */;
 		userBuildSettings = {
@@ -181,7 +188,7 @@
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
 		activeExec = 0;
 	};
-	903C77741167AABA0079EE29 /* Control */ = {
+	903C77741167AABA0079EE29 /* Kontrol */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -204,7 +211,7 @@
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
-		name = Control;
+		name = Kontrol;
 		savedGlobals = {
 		};
 		showTypeColumn = 0;
@@ -1357,5 +1364,84 @@
 		rType = 0;
 		vrLen = 1868;
 		vrLoc = 43;
+	};
+	90500DF81168C63200A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2B0EF2145700286867 /* ControlAppDelegate.m */;
+		name = "ControlAppDelegate.m: 47";
+		rLen = 0;
+		rLoc = 1529;
+		rType = 0;
+		vrLen = 1868;
+		vrLoc = 43;
+	};
+	90500DF91168C63200A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500DFA1168C63200A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDisplayName,
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E0F1168C73300A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDisplayName,
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E101168C73300A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E141168C77E00A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E191168C85600A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDisplayName,
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 }

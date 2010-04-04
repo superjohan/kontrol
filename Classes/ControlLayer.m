@@ -43,6 +43,24 @@ const float kActionDuration = .2;
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord2-7.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord2-8.caf"];
 		
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-1.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-2.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-3.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-4.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-5.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-6.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-7.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord3-8.caf"];
+		
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-1.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-2.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-3.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-4.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-5.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-6.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-7.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-8.caf"];
+		
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error1.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error2.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-error3.caf"];
@@ -104,7 +122,7 @@ const float kActionDuration = .2;
 		buttonSequenceTimer = .5;
 		songStarted = NO;
 		chord2Wait = NO;
-		songPosition = 0;
+		songPosition = 1;
 		errorTimer = 0;
 		errorType = 1;
 		
@@ -131,17 +149,8 @@ const float kActionDuration = .2;
 		buttonSequenceTimer = .5; // keep timers in sync
 		songStarted = YES;
 		
-		if(songPosition == 0)
-		{
 			[self playBeat:beatPlaying];
-			[self playChord:2];			
-		}
-		else
-		{
-			[self playBeat:beatPlaying];
-			[self playChord:1];
-		}
-		
+			[self playChord:songPosition];			
 	}
 	
 	buttonSequenceTimer = buttonSequenceTimer + dt;
@@ -164,10 +173,10 @@ const float kActionDuration = .2;
 			if(songPosition == 1)
 				[button2 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button2.scaleX*-1 scaleY:button2.scaleY*-1]];
 
-			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -186,10 +195,10 @@ const float kActionDuration = .2;
 			if(songPosition == 1)
 				[button3 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button3.scaleX*-1 scaleY:button3.scaleY*-1]];
 			
-			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -208,10 +217,10 @@ const float kActionDuration = .2;
 			if(songPosition == 1)
 				[button4 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button4.scaleX*-1 scaleY:button4.scaleY*-1]];
 			
-			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition++;
@@ -233,10 +242,10 @@ const float kActionDuration = .2;
 			if(songPosition == 1)
 				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY*-1]];
 			
-			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
 
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
 			
 			sequencePosition = 1;
@@ -246,15 +255,23 @@ const float kActionDuration = .2;
 
 -(void)button1Tapped:(id)sender
 {
-	songPosition = 0;
-
+	songPosition--;
+	if(songPosition < 1)
+	{
+		songPosition = 4;
+	}
+	
 	button1Sprite.opacity = 255;
 	[button1 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
 }
 
 -(void)button2Tapped:(id)sender
 {
-	songPosition = 1;	
+	songPosition++;
+	if(songPosition > 4)
+	{
+		songPosition = 1;
+	}
 
 	button2Sprite.opacity = 255;
 	[button2 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
@@ -302,7 +319,7 @@ const float kActionDuration = .2;
 	}
 	else
 	{
-		[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord1-%d.caf", chord]];		
+		[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord%d-%d.caf", chordType, chord]];		
 	}
 }
 

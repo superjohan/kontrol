@@ -8,19 +8,22 @@
 
 #import "ControlLayer.h"
 
-
 @implementation ControlLayer
 
--(id)init {
-	
+const float kActionDuration = .2;
+
+-(id)init
+{	
 	self = [super init];
-	if (self != nil) {
-		
+	if (self != nil)
+	{
 		[[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"control-base.m4a"];
 
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-1.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-2.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-3.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-4.caf"];
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-5.caf"];
 
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord1-1.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord1-2.caf"];
@@ -68,7 +71,7 @@
 
 		timer = 0;
 		sequenceTimer = 0;
-		beatPlaying = 3;
+		beatPlaying = 1;
 		sequencePosition = 1;
 		buttonSequenceTimer = .5;
 		songStarted = NO;
@@ -80,8 +83,8 @@
 	return self;
 }
 
--(void)mainLoop:(ccTime)dt {
-	
+-(void)mainLoop:(ccTime)dt
+{	
 	timer = timer + dt;
 	
 	//make the buttons sway a bit
@@ -89,18 +92,27 @@
 	button2.position = ccp(230+sin(1+timer*2)*3, 310+cos(2+timer*2)*3);
 	button3.position = ccp(90+sin(2+timer*2)*3, 170+cos(1+timer*2)*3);
 	button4.position = ccp(230+sin(3+timer*2)*3, 170+cos(timer*2)*3);
-	
+/*	
+	button1.rotation = 0+sin(timer*2)*3;
+	button2.rotation = 0+sin(1+timer*2)*3;
+	button3.rotation = 0+sin(2+timer*2)*3;
+	button4.rotation = 0+sin(3+timer*2)*3;	
+*/	
 	sequenceTimer = sequenceTimer + dt;
 
-	if(sequenceTimer >= 2) {
+	if(sequenceTimer >= 2)
+	{
 		sequenceTimer = 0;
 		buttonSequenceTimer = .5; // keep timers in sync
 		songStarted = YES;
 		
-		if(songPosition == 0) {
+		if(songPosition == 0)
+		{
 			[self playBeat:beatPlaying];
 			[self playChord:2];			
-		} else {
+		}
+		else
+		{
 			[self playBeat:beatPlaying];
 			[self playChord:1];
 		}
@@ -109,86 +121,98 @@
 	
 	buttonSequenceTimer = buttonSequenceTimer + dt;
 	
-	if(buttonSequenceTimer >= .5 && songStarted == YES) {
+	if(buttonSequenceTimer >= .5 && songStarted == YES)
+	{
 		buttonSequenceTimer = 0;
 
-		if(sequencePosition == 1) {
-			button1Sprite.opacity = 255;
-			[button1 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
-			[button2 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
-			[button3 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button3.scaleX*(-1) scaleY:1]];
-			[button4 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button4.scaleY*(-1)]];
+		if(sequencePosition == 1)
+		{
+			[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
 			sequencePosition++;
-		} else if(sequencePosition == 2) {
-			button2Sprite.opacity = 255;
-			[button2 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
-			[button3 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
-			[button4 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button4.scaleX*(-1) scaleY:1]];
-			[button1 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button1.scaleY*(-1)]];
+		} 
+		else if(sequencePosition == 2)
+		{
+			[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
 			sequencePosition++;
-		} else if(sequencePosition == 3) {
-			button3Sprite.opacity = 255;
-			[button3 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
-			[button4 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
-			[button1 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button1.scaleX*(-1) scaleY:1]];
-			[button2 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button2.scaleY*(-1)]];
+		}
+		else if(sequencePosition == 3)
+		{
+			[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
 			sequencePosition++;
-		} else if(sequencePosition == 4) {
-			button4Sprite.opacity = 255;
-			[button4 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
-			[button1 runAction:[CCRotateBy actionWithDuration:.1 angle:90]];
-			[button2 runAction:[CCScaleTo actionWithDuration:.1 scaleX:button2.scaleX*(-1) scaleY:1]];
-			[button3 runAction:[CCScaleTo actionWithDuration:.1 scaleX:1 scaleY:button3.scaleY*(-1)]];
+		}
+		else if(sequencePosition == 4)
+		{
+			[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
 			sequencePosition = 1;
 		}
 	}
-	
 }
 
--(void)button1Tapped:(id)sender {
+-(void)button1Tapped:(id)sender
+{
 	songPosition = 0;
+
+	button1Sprite.opacity = 255;
+	[button1 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
 }
 
--(void)button2Tapped:(id)sender {
+-(void)button2Tapped:(id)sender
+{
 	songPosition = 1;	
+
+	button2Sprite.opacity = 255;
+	[button2 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
 }
 
--(void)button3Tapped:(id)sender {
-	
+-(void)button3Tapped:(id)sender
+{	
 	beatPlaying--;
-	if(beatPlaying > 3) {
-		beatPlaying = 1;
+	if(beatPlaying < 1)
+	{
+		beatPlaying = 5;
 	}
+
+	button3Sprite.opacity = 255;
+	[button3 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
 }
 
--(void)button4Tapped:(id)sender {
-
+-(void)button4Tapped:(id)sender
+{
 	beatPlaying++;
-	if(beatPlaying < 1) {
-		beatPlaying = 3;
+	if(beatPlaying > 5)
+	{
+		beatPlaying = 1;
 	}	
+
+	button4Sprite.opacity = 255;
+	[button4 runAction:[CCFadeTo actionWithDuration:.1 opacity:192]];
 }
 
--(void)playChord:(int)chordType {
-	
+-(void)playChord:(int)chordType
+{	
 	int chord = (arc4random() % 8) + 1;
 
-	if(chordType == 2) {
-		if(chord2Wait == NO) {
-			[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord2-%d.caf", chordType, chord]];
+	if(chordType == 2)
+	{
+		if(chord2Wait == NO)
+		{
+			[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord2-%d.caf", chord]];
 			chord2Wait = YES;
-		} else {
+		} 
+		else
+		{
 			chord2Wait = NO;
 		}
-	} else {
-		[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord1-%d.caf", chordType, chord]];		
+	}
+	else
+	{
+		[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord1-%d.caf", chord]];		
 	}
 }
 
--(void)playBeat:(int)beatType {
-	
+-(void)playBeat:(int)beatType
+{
 	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-%d.caf", beatType]];
-
 }
 
 @end

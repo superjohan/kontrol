@@ -10,8 +10,8 @@
 #import "cocos2d.h"
 #import "SimpleAudioEngine.h"
 
-@interface ControlLayer : CCLayer {
-
+@interface ControlLayer : CCLayer
+{
 	CCMenuItem *button1;
 	CCMenuItem *button2;
 	CCMenuItem *button3;

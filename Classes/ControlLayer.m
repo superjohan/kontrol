@@ -92,12 +92,7 @@ const float kActionDuration = .2;
 	button2.position = ccp(230+sin(1+timer*2)*3, 310+cos(2+timer*2)*3);
 	button3.position = ccp(90+sin(2+timer*2)*3, 170+cos(1+timer*2)*3);
 	button4.position = ccp(230+sin(3+timer*2)*3, 170+cos(timer*2)*3);
-/*	
-	button1.rotation = 0+sin(timer*2)*3;
-	button2.rotation = 0+sin(1+timer*2)*3;
-	button3.rotation = 0+sin(2+timer*2)*3;
-	button4.rotation = 0+sin(3+timer*2)*3;	
-*/	
+
 	sequenceTimer = sequenceTimer + dt;
 
 	if(sequenceTimer >= 2)
@@ -127,22 +122,78 @@ const float kActionDuration = .2;
 
 		if(sequencePosition == 1)
 		{
-			[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			if(beatPlaying == 2)
+				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+
+			if(beatPlaying == 3)
+				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY]];
+
+			if(beatPlaying == 4)
+				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button1.scaleY*-1]];
+			
+			if(songPosition == 1)
+				[button2 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button2.scaleX*-1 scaleY:button2.scaleY*-1]];
+
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
+
 			sequencePosition++;
 		} 
 		else if(sequencePosition == 2)
 		{
-			[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			if(beatPlaying == 2)
+				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+
+			if(beatPlaying == 3)
+				[button2 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY]];
+				 
+			if(beatPlaying == 4)
+				[button2 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button2.scaleY*-1]];
+			
+			if(songPosition == 1)
+				[button3 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button3.scaleX*-1 scaleY:button3.scaleY*-1]];
+			
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
+
 			sequencePosition++;
 		}
 		else if(sequencePosition == 3)
 		{
-			[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			if(beatPlaying == 2)
+				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			
+			if(beatPlaying == 3)
+				[button3 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY]];
+				 
+			if(beatPlaying == 4)
+				[button3 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button3.scaleY*-1]];
+			
+			if(songPosition == 1)
+				[button4 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button4.scaleX*-1 scaleY:button4.scaleY*-1]];
+			
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
+
 			sequencePosition++;
 		}
 		else if(sequencePosition == 4)
 		{
-			[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			if(beatPlaying == 2)
+				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:90]];
+			
+			if(beatPlaying == 3)
+				[button4 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY]];
+				 
+			if(beatPlaying == 4)
+				[button4 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button4.scaleY*-1]];
+			
+			if(songPosition == 1)
+				[button1 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button1.scaleX*-1 scaleY:button1.scaleY*-1]];
+			
+			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 0) 
+				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-45]];
+
 			sequencePosition = 1;
 		}
 	}

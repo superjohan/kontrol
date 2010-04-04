@@ -83,7 +83,7 @@ const float kActionDuration = .2;
 		[self addChild:error2 z:1];
 		[self addChild:error3 z:1];
 		[self addChild:error4 z:1];
-		
+
 		button1Sprite = [CCSprite spriteWithFile:@"block.png"];
 		button2Sprite = [CCSprite spriteWithFile:@"block.png"];
 		button3Sprite = [CCSprite spriteWithFile:@"block.png"];
@@ -141,7 +141,7 @@ const float kActionDuration = .2;
 	button2.position = ccp(230+sin(1+timer*2)*3, 310+cos(2+timer*2)*3);
 	button3.position = ccp(90+sin(2+timer*2)*3, 170+cos(1+timer*2)*3);
 	button4.position = ccp(230+sin(3+timer*2)*3, 170+cos(timer*2)*3);
-
+	
 	sequenceTimer = sequenceTimer + dt;
 
 	if(sequenceTimer >= 2)

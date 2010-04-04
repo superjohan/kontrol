@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -266,19 +268,17 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>2D500B1D0D5A766B00DBA0E3</string>
 								<string>50F414EB1069373D002A0D5E</string>
-								<string>90472A2511688C390015B20D</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>56</integer>
-									<integer>12</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 375}, {186, 764}}</string>
+							<string>{{0, 0}, {186, 764}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -313,7 +313,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>dist.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,11 +321,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>dist.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>90500E191168C85600A3E7B1</string>
+										<string>90500E521168D83D00A3E7B1</string>
 										<key>history</key>
 										<array>
 											<string>90472A3711688C670015B20D</string>
@@ -337,10 +337,11 @@
 											<string>90500CFC1168A4F200A3E7B1</string>
 											<string>90500D441168AF2400A3E7B1</string>
 											<string>90500D871168B55600A3E7B1</string>
-											<string>90500DAF1168BD6E00A3E7B1</string>
-											<string>90500DF11168C36900A3E7B1</string>
 											<string>90500DF81168C63200A3E7B1</string>
-											<string>90500E0F1168C73300A3E7B1</string>
+											<string>90500E241168D5F200A3E7B1</string>
+											<string>90500E4A1168D81E00A3E7B1</string>
+											<string>90500E4B1168D81E00A3E7B1</string>
+											<string>90500E4C1168D81E00A3E7B1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -543,7 +544,7 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>903C779B1167AABF0079EE29</string>
-		<string>/Users/rm/Dropbox/Projects/Control/Control.xcodeproj</string>
+		<string>/Users/rm/Dropbox/Projects/Control/Kontrol.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 55 1436 823 0 0 1440 878 </string>

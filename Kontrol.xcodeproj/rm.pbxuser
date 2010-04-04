@@ -23,7 +23,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 903C77741167AABA0079EE29 /* Kontrol */;
-		activeSDKPreference = iphoneos3.1.3;
+		activeSDKPreference = iphoneos3.0;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Kontrol */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Kontrol */,
@@ -180,6 +180,20 @@
 			90500E101168C73300A3E7B1 /* PlistBookmark */ = 90500E101168C73300A3E7B1 /* PlistBookmark */;
 			90500E141168C77E00A3E7B1 /* PlistBookmark */ = 90500E141168C77E00A3E7B1 /* PlistBookmark */;
 			90500E191168C85600A3E7B1 /* PlistBookmark */ = 90500E191168C85600A3E7B1 /* PlistBookmark */;
+			90500E241168D5F200A3E7B1 /* PlistBookmark */ = 90500E241168D5F200A3E7B1 /* PlistBookmark */;
+			90500E251168D5F200A3E7B1 /* PBXTextBookmark */ = 90500E251168D5F200A3E7B1 /* PBXTextBookmark */;
+			90500E261168D5F200A3E7B1 /* PBXTextBookmark */ = 90500E261168D5F200A3E7B1 /* PBXTextBookmark */;
+			90500E271168D5F200A3E7B1 /* PBXTextBookmark */ = 90500E271168D5F200A3E7B1 /* PBXTextBookmark */;
+			90500E2A1168D65100A3E7B1 /* PBXTextBookmark */ = 90500E2A1168D65100A3E7B1 /* PBXTextBookmark */;
+			90500E2D1168D67A00A3E7B1 /* PBXTextBookmark */ = 90500E2D1168D67A00A3E7B1 /* PBXTextBookmark */;
+			90500E301168D6AC00A3E7B1 /* PBXTextBookmark */ = 90500E301168D6AC00A3E7B1 /* PBXTextBookmark */;
+			90500E311168D6AC00A3E7B1 /* PBXTextBookmark */ = 90500E311168D6AC00A3E7B1 /* PBXTextBookmark */;
+			90500E321168D6AC00A3E7B1 /* PBXTextBookmark */ = 90500E321168D6AC00A3E7B1 /* PBXTextBookmark */;
+			90500E4A1168D81E00A3E7B1 /* PBXTextBookmark */ = 90500E4A1168D81E00A3E7B1 /* PBXTextBookmark */;
+			90500E4B1168D81E00A3E7B1 /* PBXTextBookmark */ = 90500E4B1168D81E00A3E7B1 /* PBXTextBookmark */;
+			90500E4C1168D81E00A3E7B1 /* PBXBookmark */ = 90500E4C1168D81E00A3E7B1 /* PBXBookmark */;
+			90500E4D1168D81E00A3E7B1 /* PlistBookmark */ = 90500E4D1168D81E00A3E7B1 /* PlistBookmark */;
+			90500E521168D83D00A3E7B1 /* PlistBookmark */ = 90500E521168D83D00A3E7B1 /* PlistBookmark */;
 		};
 		sourceControlManager = 903C779D1167AABF0079EE29 /* Source Control */;
 		userBuildSettings = {
@@ -249,15 +263,15 @@
 	903C77CC1167B21C0079EE29 /* ControlLayer.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1167, 793}}";
-			sepNavSelRange = "{1026, 0}";
-			sepNavVisRange = "{34, 1000}";
+			sepNavSelRange = "{448, 0}";
+			sepNavVisRange = "{3, 1031}";
 		};
 	};
 	903C77CD1167B21C0079EE29 /* ControlLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1167, 4836}}";
-			sepNavSelRange = "{3212, 0}";
-			sepNavVisRange = "{2385, 2700}";
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 5629}}";
+			sepNavSelRange = "{3858, 0}";
+			sepNavVisRange = "{11941, 1487}";
 		};
 	};
 	903C78211167B9BE0079EE29 /* PBXTextBookmark */ = {
@@ -319,7 +333,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 176";
 		rLen = 0;
-		rLoc = 11741;
+		rLoc = 11740;
 		rType = 0;
 		vrLen = 1098;
 		vrLoc = 4689;
@@ -329,7 +343,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 100";
 		rLen = 0;
-		rLoc = 5916;
+		rLoc = 5915;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 3467;
@@ -339,7 +353,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 100";
 		rLen = 0;
-		rLoc = 5916;
+		rLoc = 5915;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 3467;
@@ -419,7 +433,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 96";
 		rLen = 0;
-		rLoc = 5918;
+		rLoc = 5917;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 5061;
@@ -429,7 +443,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 127";
 		rLen = 0;
-		rLoc = 7194;
+		rLoc = 7193;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 4083;
@@ -439,7 +453,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 129";
 		rLen = 0;
-		rLoc = 7619;
+		rLoc = 7618;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 4261;
@@ -449,7 +463,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 129";
 		rLen = 0;
-		rLoc = 7534;
+		rLoc = 7533;
 		rType = 0;
 		vrLen = 1303;
 		vrLoc = 4261;
@@ -459,7 +473,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 129";
 		rLen = 0;
-		rLoc = 7618;
+		rLoc = 7617;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 4261;
@@ -469,7 +483,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 165";
 		rLen = 0;
-		rLoc = 10615;
+		rLoc = 10614;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 4261;
@@ -479,7 +493,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 164";
 		rLen = 0;
-		rLoc = 10539;
+		rLoc = 10538;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 4261;
@@ -489,7 +503,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 162";
 		rLen = 0;
-		rLoc = 10663;
+		rLoc = 10662;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 4261;
@@ -499,7 +513,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 171";
 		rLen = 0;
-		rLoc = 10743;
+		rLoc = 10742;
 		rType = 0;
 		vrLen = 1754;
 		vrLoc = 4261;
@@ -509,7 +523,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 129";
 		rLen = 0;
-		rLoc = 7336;
+		rLoc = 7335;
 		rType = 0;
 		vrLen = 2027;
 		vrLoc = 4317;
@@ -519,7 +533,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 180";
 		rLen = 0;
-		rLoc = 10649;
+		rLoc = 10648;
 		rType = 0;
 		vrLen = 2187;
 		vrLoc = 4345;
@@ -529,7 +543,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 189";
 		rLen = 0;
-		rLoc = 10400;
+		rLoc = 10399;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 6576;
@@ -539,7 +553,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 192";
 		rLen = 0;
-		rLoc = 10508;
+		rLoc = 10507;
 		rType = 0;
 		vrLen = 1695;
 		vrLoc = 6103;
@@ -549,7 +563,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 195";
 		rLen = 0;
-		rLoc = 10609;
+		rLoc = 10608;
 		rType = 0;
 		vrLen = 1695;
 		vrLoc = 6103;
@@ -559,7 +573,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 195";
 		rLen = 0;
-		rLoc = 10609;
+		rLoc = 10608;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 6103;
@@ -569,7 +583,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 192";
 		rLen = 0;
-		rLoc = 10498;
+		rLoc = 10497;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 6103;
@@ -579,7 +593,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 192";
 		rLen = 0;
-		rLoc = 10498;
+		rLoc = 10497;
 		rType = 0;
 		vrLen = 1695;
 		vrLoc = 6103;
@@ -589,7 +603,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 192";
 		rLen = 0;
-		rLoc = 10498;
+		rLoc = 10497;
 		rType = 0;
 		vrLen = 1695;
 		vrLoc = 6103;
@@ -599,7 +613,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 142";
 		rLen = 0;
-		rLoc = 7879;
+		rLoc = 7878;
 		rType = 0;
 		vrLen = 2038;
 		vrLoc = 4146;
@@ -609,7 +623,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 210";
 		rLen = 0;
-		rLoc = 10852;
+		rLoc = 10851;
 		rType = 0;
 		vrLen = 2008;
 		vrLoc = 6001;
@@ -629,7 +643,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 296";
 		rLen = 0;
-		rLoc = 12443;
+		rLoc = 12442;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 8415;
@@ -699,7 +713,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 329";
 		rLen = 0;
-		rLoc = 12715;
+		rLoc = 12714;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 2323;
@@ -709,7 +723,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 329";
 		rLen = 0;
-		rLoc = 12710;
+		rLoc = 12709;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 9161;
@@ -719,7 +733,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 329";
 		rLen = 0;
-		rLoc = 12707;
+		rLoc = 12706;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 9161;
@@ -729,7 +743,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 350";
 		rLen = 0;
-		rLoc = 13311;
+		rLoc = 13310;
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 9581;
@@ -739,7 +753,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 354";
 		rLen = 0;
-		rLoc = 13428;
+		rLoc = 13427;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 9581;
@@ -775,7 +789,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 354";
 		rLen = 0;
-		rLoc = 13428;
+		rLoc = 13427;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 9581;
@@ -785,7 +799,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 338";
 		rLen = 0;
-		rLoc = 12957;
+		rLoc = 12956;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 9587;
@@ -795,7 +809,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 338";
 		rLen = 0;
-		rLoc = 12957;
+		rLoc = 12956;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 9587;
@@ -805,7 +819,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 359";
 		rLen = 0;
-		rLoc = 13376;
+		rLoc = 13375;
 		rType = 0;
 		vrLen = 1722;
 		vrLoc = 9914;
@@ -815,7 +829,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 335";
 		rLen = 0;
-		rLoc = 12716;
+		rLoc = 12715;
 		rType = 0;
 		vrLen = 1749;
 		vrLoc = 9914;
@@ -825,7 +839,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 337";
 		rLen = 0;
-		rLoc = 12716;
+		rLoc = 12715;
 		rType = 0;
 		vrLen = 1751;
 		vrLoc = 9914;
@@ -835,7 +849,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 336";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 9914;
@@ -845,7 +859,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 348";
 		rLen = 0;
-		rLoc = 12716;
+		rLoc = 12715;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 9914;
@@ -855,7 +869,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 342";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 9914;
@@ -865,7 +879,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 338";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1391;
 		vrLoc = 9914;
@@ -875,7 +889,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 346";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 9914;
@@ -885,7 +899,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 345";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 9914;
@@ -895,7 +909,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 349";
 		rLen = 0;
-		rLoc = 12716;
+		rLoc = 12715;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 9914;
@@ -905,7 +919,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 345";
 		rLen = 0;
-		rLoc = 12713;
+		rLoc = 12712;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 9914;
@@ -915,7 +929,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 367";
 		rLen = 0;
-		rLoc = 13376;
+		rLoc = 13375;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 10023;
@@ -925,7 +939,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 367";
 		rLen = 0;
-		rLoc = 13376;
+		rLoc = 13375;
 		rType = 0;
 		vrLen = 1767;
 		vrLoc = 10189;
@@ -935,7 +949,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 98";
 		rLen = 0;
-		rLoc = 5184;
+		rLoc = 5182;
 		rType = 0;
 		vrLen = 2034;
 		vrLoc = 2810;
@@ -945,7 +959,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 98";
 		rLen = 0;
-		rLoc = 5184;
+		rLoc = 5182;
 		rType = 0;
 		vrLen = 2598;
 		vrLoc = 22;
@@ -985,7 +999,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 98";
 		rLen = 0;
-		rLoc = 5184;
+		rLoc = 5182;
 		rType = 0;
 		vrLen = 2598;
 		vrLoc = 22;
@@ -995,7 +1009,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 98";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5180;
 		rType = 0;
 		vrLen = 1967;
 		vrLoc = 2989;
@@ -1020,7 +1034,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 98";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5180;
 		rType = 0;
 		vrLen = 1988;
 		vrLoc = 2989;
@@ -1030,7 +1044,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 273";
 		rLen = 0;
-		rLoc = 11369;
+		rLoc = 11368;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 9284;
@@ -1040,7 +1054,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 245";
 		rLen = 0;
-		rLoc = 10728;
+		rLoc = 10727;
 		rType = 0;
 		vrLen = 1956;
 		vrLoc = 8100;
@@ -1050,7 +1064,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 173";
 		rLen = 0;
-		rLoc = 7509;
+		rLoc = 7508;
 		rType = 0;
 		vrLen = 2146;
 		vrLoc = 6271;
@@ -1060,7 +1074,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 371";
 		rLen = 0;
-		rLoc = 13376;
+		rLoc = 13375;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 10915;
@@ -1070,7 +1084,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 371";
 		rLen = 0;
-		rLoc = 13376;
+		rLoc = 13375;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 10915;
@@ -1090,7 +1104,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 153";
 		rLen = 0;
-		rLoc = 6921;
+		rLoc = 6920;
 		rType = 0;
 		vrLen = 1993;
 		vrLoc = 5442;
@@ -1100,7 +1114,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 158";
 		rLen = 0;
-		rLoc = 6916;
+		rLoc = 6915;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 5628;
@@ -1110,7 +1124,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 158";
 		rLen = 0;
-		rLoc = 6914;
+		rLoc = 6913;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 5628;
@@ -1120,7 +1134,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 159";
 		rLen = 0;
-		rLoc = 6916;
+		rLoc = 6915;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 5628;
@@ -1130,7 +1144,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 145";
 		rLen = 0;
-		rLoc = 6022;
+		rLoc = 6021;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 5628;
@@ -1140,7 +1154,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 157";
 		rLen = 0;
-		rLoc = 6251;
+		rLoc = 6250;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 5408;
@@ -1150,7 +1164,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 159";
 		rLen = 0;
-		rLoc = 6883;
+		rLoc = 6882;
 		rType = 0;
 		vrLen = 1514;
 		vrLoc = 5408;
@@ -1170,7 +1184,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 168";
 		rLen = 0;
-		rLoc = 6919;
+		rLoc = 6918;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 11222;
@@ -1180,7 +1194,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 168";
 		rLen = 0;
-		rLoc = 6919;
+		rLoc = 6918;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 5309;
@@ -1190,7 +1204,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 160";
 		rLen = 0;
-		rLoc = 6292;
+		rLoc = 6291;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 5309;
@@ -1200,7 +1214,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 160";
 		rLen = 0;
-		rLoc = 6292;
+		rLoc = 6291;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 5406;
@@ -1210,7 +1224,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 160";
 		rLen = 0;
-		rLoc = 6292;
+		rLoc = 6291;
 		rType = 0;
 		vrLen = 1437;
 		vrLoc = 5436;
@@ -1220,7 +1234,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 163";
 		rLen = 0;
-		rLoc = 6346;
+		rLoc = 6345;
 		rType = 0;
 		vrLen = 1189;
 		vrLoc = 5439;
@@ -1230,7 +1244,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 156";
 		rLen = 0;
-		rLoc = 6251;
+		rLoc = 6250;
 		rType = 0;
 		vrLen = 1183;
 		vrLoc = 5439;
@@ -1240,7 +1254,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 332";
 		rLen = 0;
-		rLoc = 12084;
+		rLoc = 12083;
 		rType = 0;
 		vrLen = 1189;
 		vrLoc = 5409;
@@ -1250,7 +1264,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 163";
 		rLen = 0;
-		rLoc = 6372;
+		rLoc = 6371;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 5409;
@@ -1260,7 +1274,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 262";
 		rLen = 0;
-		rLoc = 10539;
+		rLoc = 10538;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 4878;
@@ -1270,7 +1284,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 172";
 		rLen = 0;
-		rLoc = 6496;
+		rLoc = 6495;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 5559;
@@ -1280,7 +1294,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 180";
 		rLen = 0;
-		rLoc = 6619;
+		rLoc = 6618;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 5559;
@@ -1290,7 +1304,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 191";
 		rLen = 0;
-		rLoc = 6817;
+		rLoc = 6816;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 6250;
@@ -1300,7 +1314,7 @@
 		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
 		name = "ControlLayer.m: 308";
 		rLen = 0;
-		rLoc = 10963;
+		rLoc = 10962;
 		rType = 0;
 		vrLen = 1918;
 		vrLoc = 9133;
@@ -1441,6 +1455,144 @@
 			CFBundleDisplayName,
 		);
 		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E241168D5F200A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDisplayName,
+		);
+		name = /Users/rm/Dropbox/Projects/Control/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E251168D5F200A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CC1167B21C0079EE29 /* ControlLayer.h */;
+		name = "ControlLayer.h: 28";
+		rLen = 0;
+		rLoc = 448;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 22;
+	};
+	90500E261168D5F200A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 64";
+		rLen = 0;
+		rLoc = 3212;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 5452;
+	};
+	90500E271168D5F200A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 167";
+		rLen = 0;
+		rLoc = 5913;
+		rType = 0;
+		vrLen = 1625;
+		vrLoc = 5377;
+	};
+	90500E2A1168D65100A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 167";
+		rLen = 0;
+		rLoc = 5913;
+		rType = 0;
+		vrLen = 1365;
+		vrLoc = 6052;
+	};
+	90500E2D1168D67A00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 167";
+		rLen = 0;
+		rLoc = 5913;
+		rType = 0;
+		vrLen = 1365;
+		vrLoc = 6052;
+	};
+	90500E301168D6AC00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 86";
+		rLen = 0;
+		rLoc = 3858;
+		rType = 0;
+		vrLen = 3074;
+		vrLoc = 79;
+	};
+	90500E311168D6AC00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CC1167B21C0079EE29 /* ControlLayer.h */;
+		name = "ControlLayer.h: 28";
+		rLen = 0;
+		rLoc = 448;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 22;
+	};
+	90500E321168D6AC00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CC1167B21C0079EE29 /* ControlLayer.h */;
+		name = "ControlLayer.h: 24";
+		rLen = 0;
+		rLoc = 448;
+		rType = 0;
+		vrLen = 1006;
+		vrLoc = 22;
+	};
+	90500E4A1168D81E00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CC1167B21C0079EE29 /* ControlLayer.h */;
+		name = "ControlLayer.h: 24";
+		rLen = 0;
+		rLoc = 448;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 3;
+	};
+	90500E4B1168D81E00A3E7B1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */;
+		name = "ControlLayer.m: 86";
+		rLen = 0;
+		rLoc = 3858;
+		rType = 0;
+		vrLen = 1487;
+		vrLoc = 11941;
+	};
+	90500E4C1168D81E00A3E7B1 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 90500E431168D74200A3E7B1 /* dist.plist */;
+	};
+	90500E4D1168D81E00A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 90500E431168D74200A3E7B1 /* dist.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rm/Dropbox/Projects/Control/dist.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	90500E521168D83D00A3E7B1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 90500E431168D74200A3E7B1 /* dist.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rm/Dropbox/Projects/Control/dist.plist;
 		rLen = 0;
 		rLoc = 9223372036854775807;
 	};

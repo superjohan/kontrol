@@ -120,6 +120,7 @@ const float kActionDuration = .2;
 		songPosition = 1;
 		errorTimer = 0;
 		errorType = 1;
+		errorCounter = 1;
 		
 		[self schedule:@selector(mainLoop:)];
 	}
@@ -141,6 +142,7 @@ const float kActionDuration = .2;
 	if(sequenceTimer >= 2)
 	{
 		sequenceTimer = 0;
+		errorTimer = .25;
 		buttonSequenceTimer = .5; // keep timers in sync
 		songStarted = YES;
 		
@@ -148,6 +150,56 @@ const float kActionDuration = .2;
 			[self playChord:songPosition];			
 	}
 	
+	errorTimer = errorTimer + dt;
+	if(errorTimer >= .25 && songStarted == YES)
+	{
+		errorTimer = 0;
+		errorCounter++;
+		
+		if(songPosition == 1)
+		{
+			if(errorCounter == 3)
+			{
+				if(chord2Wait == YES) 
+				{
+					[self addError];
+				}
+			}
+		}
+		if(songPosition == 2)
+		{
+			if(errorCounter == 3 ||
+			   errorCounter == 6)
+			{
+				[self addError];					
+			}
+		}
+		if(songPosition == 3)
+		{
+			if(errorCounter == 3 ||
+			   errorCounter == 5 ||
+			   errorCounter == 6)
+			{
+				[self addError];					
+			}
+		}
+		if(songPosition == 4)
+		{
+			if(errorCounter == 3 ||
+			   errorCounter == 5 ||
+			   errorCounter == 6 ||
+			   errorCounter == 8)
+			{
+				[self addError];					
+			}
+		}
+		
+		if(errorCounter > 8)
+		{
+			errorCounter = 1;
+		}
+	}	
+		
 	buttonSequenceTimer = buttonSequenceTimer + dt;
 	
 	if(buttonSequenceTimer >= .5 && songStarted == YES)
@@ -165,7 +217,7 @@ const float kActionDuration = .2;
 			if(beatPlaying == 4)
 				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button1.scaleY*-1]];
 			
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button2 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button2.scaleX*-1 scaleY:button2.scaleY*-1]];
 
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
@@ -173,6 +225,9 @@ const float kActionDuration = .2;
 
 			if(songPosition == 3)
 				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
+			if(songPosition == 4)
+				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-90]];
 			
 			sequencePosition++;
 		} 
@@ -187,7 +242,7 @@ const float kActionDuration = .2;
 			if(beatPlaying == 4)
 				[button2 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button2.scaleY*-1]];
 			
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button3 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button3.scaleX*-1 scaleY:button3.scaleY*-1]];
 			
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
@@ -195,6 +250,9 @@ const float kActionDuration = .2;
 
 			if(songPosition == 3)
 				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
+			if(songPosition == 4)
+				[button4 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-90]];
 			
 			sequencePosition++;
 		}
@@ -209,7 +267,7 @@ const float kActionDuration = .2;
 			if(beatPlaying == 4)
 				[button3 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX scaleY:button3.scaleY*-1]];
 			
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button4 runAction:[CCScaleTo actionWithDuration:.2 scaleX:button4.scaleX*-1 scaleY:button4.scaleY*-1]];
 			
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
@@ -217,6 +275,9 @@ const float kActionDuration = .2;
 
 			if(songPosition == 3)
 				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
+			if(songPosition == 4)
+				[button1 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-90]];
 			
 			sequencePosition++;
 		}
@@ -234,7 +295,7 @@ const float kActionDuration = .2;
 			if(beatPlaying == 5)
 				[button4 runAction:[CCRotateBy actionWithDuration:.4 angle:360]];
 			
-			if(songPosition == 1)
+			if(songPosition == 2)
 				[button1 runAction:[CCScaleTo actionWithDuration:kActionDuration scaleX:button1.scaleX*-1 scaleY:button1.scaleY*-1]];
 			
 			if(beatPlaying > 1 && beatPlaying < 5 && songPosition == 1) 
@@ -242,6 +303,9 @@ const float kActionDuration = .2;
 
 			if(songPosition == 3)
 				[button3 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:45]];
+			
+			if(songPosition == 4)
+				[button2 runAction:[CCRotateBy actionWithDuration:kActionDuration angle:-90]];
 			
 			sequencePosition = 1;
 		}
@@ -300,11 +364,11 @@ const float kActionDuration = .2;
 {	
 	int chord = (arc4random() % 8) + 1;
 
-	if(chordType == 2)
+	if(chordType == 1)
 	{
 		if(chord2Wait == NO)
 		{
-			[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord2-%d.caf", chord]];
+			[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-chord1-%d.caf", chord]];
 			chord2Wait = YES;
 		} 
 		else
@@ -323,63 +387,37 @@ const float kActionDuration = .2;
 	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"control-%d.caf", beatType]];
 }
 
-- (void)onEnter
+-(void)addError
 {
-	// let's enable touch events
-	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
-	[super onEnter];
-}
-
-
-- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-{	
-	CGPoint touchPoint = [touch locationInView:[touch view]];
+	int y = (arc4random() % 480);
 	
-	[self addError:touchPoint.x y:touchPoint.y];
-	return YES;
-}
-
--(void)addError:(CGFloat)x y:(CGFloat)y
-{
-	float errorGain = 1 - y / 480.0f;
-	float errorPan = 0;
-	
-	if(x < 160)
-		errorPan = (x / 160.0f) - 1;
-	else
-		errorPan = ((x - 160.0f) / 160.0f);
-
 	if(errorType == 1)
 	{
-		error1.position = ccp(160,480-y);
+		error1.position = ccp(160,y);
 		error1.opacity = 128;
 		[error1 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error1 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];				
-		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error1.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 2)
 	{
-		error2.position = ccp(160,480-y);
+		error2.position = ccp(160,y);
 		error2.opacity = 128;
 		[error2 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error2 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
-		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error2.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 3)
 	{
-		error3.position = ccp(160,480-y);
+		error3.position = ccp(160,y);
 		error3.opacity = 128;
 		[error3 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error3 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
-		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error3.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	if(errorType == 4)
 	{
-		error4.position = ccp(160,480-y);
+		error4.position = ccp(160,y);
 		error4.opacity = 128;
 		[error4 runAction:[CCFadeTo actionWithDuration:1 opacity:0]];
 		[error4 runAction:[CCMoveTo	actionWithDuration:1 position:ccp(160,0)]];
-		[[SimpleAudioEngine sharedEngine] playEffect:@"control-error4.caf" pitch:1 pan:errorPan gain:errorGain];
 	}
 	errorType++;
 	if(errorType > 4)

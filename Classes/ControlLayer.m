@@ -60,7 +60,8 @@ const float kActionDuration = .2;
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-6.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-7.caf"];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"control-chord4-8.caf"];
-		
+				
+		[CDAudioManager sharedManager].backgroundMusic.volume = 0;
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"control-base.m4a"];
 		
 		error1 = [CCSprite spriteWithFile:@"error1.png"];
@@ -131,6 +132,10 @@ const float kActionDuration = .2;
 {	
 	timer = timer + dt;
 	
+	if(timer < 4) {
+		[CDAudioManager sharedManager].backgroundMusic.volume = timer / 4;
+	}
+
 	//make the buttons sway a bit
 	button1.position = ccp(90+sin(timer*2)*3, 310+cos(3+timer*2)*3);
 	button2.position = ccp(230+sin(1+timer*2)*3, 310+cos(2+timer*2)*3);

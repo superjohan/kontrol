@@ -33,21 +33,21 @@
  *		CCLOGERROR() will be enabled
  *		CCLOGINFO()	will be enabled 
  */
-#ifndef COCOS2D_DEBUG || COCOS2D_DEBUG == 0
+//#ifndef COCOS2D_DEBUG
 #define CCLOG(...) do {} while (0)
 #define CCLOGINFO(...) do {} while (0)
 #define CCLOGERROR(...) do {} while (0)
 
-#elif COCOS2D_DEBUG == 1
-#define CCLOG(...) NSLog(__VA_ARGS__)
-#define CCLOGERROR(...) NSLog(__VA_ARGS__)
-#define CCLOGINFO(...) do {} while (0)
-
-#elif COCOS2D_DEBUG > 1
-#define CCLOG(...) NSLog(__VA_ARGS__)
-#define CCLOGERROR(...) NSLog(__VA_ARGS__)
-#define CCLOGINFO(...) NSLog(__VA_ARGS__)
-#endif
+//#elif COCOS2D_DEBUG == 1
+//#define CCLOG(...) NSLog(__VA_ARGS__)
+//#define CCLOGERROR(...) NSLog(__VA_ARGS__)
+//#define CCLOGINFO(...) do {} while (0)
+//
+//#elif COCOS2D_DEBUG > 1
+//#define CCLOG(...) NSLog(__VA_ARGS__)
+//#define CCLOGERROR(...) NSLog(__VA_ARGS__)
+//#define CCLOGINFO(...) NSLog(__VA_ARGS__)
+//#endif
 
 //simple macro that swaps 2 variables
 #define CC_SWAP( x, y )			\

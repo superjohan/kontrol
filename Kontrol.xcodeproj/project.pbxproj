@@ -200,9 +200,7 @@
 		50F41341106926B2002A0D5E /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F41321106926B2002A0D5E /* CJSONScanner.m */; };
 		50F41342106926B2002A0D5E /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F41322106926B2002A0D5E /* CJSONSerializer.h */; };
 		50F41343106926B2002A0D5E /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F41323106926B2002A0D5E /* CJSONSerializer.m */; };
-		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
-		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		903C77B31167B0D60079EE29 /* control-1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C779F1167B0CC0079EE29 /* control-1.caf */; };
 		903C77B41167B0D60079EE29 /* control-2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C77A01167B0CD0079EE29 /* control-2.caf */; };
 		903C77B51167B0D60079EE29 /* control-3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 903C77A11167B0CD0079EE29 /* control-3.caf */; };
@@ -227,6 +225,10 @@
 		903C77CB1167B2050079EE29 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 903C77CA1167B2050079EE29 /* background.png */; };
 		903C77CE1167B21C0079EE29 /* ControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C77CD1167B21C0079EE29 /* ControlLayer.m */; };
 		903C77DB1167B3D40079EE29 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 903C77DA1167B3D40079EE29 /* block.png */; };
+		904113FE154BFE05006503EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 904113FD154BFE05006503EB /* Default.png */; };
+		90411400154BFE09006503EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 904113FF154BFE09006503EB /* Default@2x.png */; };
+		90411402154BFEA9006503EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90411401154BFEA9006503EB /* Icon.png */; };
+		90411404154BFEAB006503EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90411403154BFEAB006503EB /* Icon@2x.png */; };
 		90472A2311688C300015B20D /* control-4.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90472A2211688C300015B20D /* control-4.caf */; };
 		90472A3E11688DDF0015B20D /* control-5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90472A3D11688DDF0015B20D /* control-5.caf */; };
 		90500CA711689FEC00A3E7B1 /* error1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90500CA311689FEB00A3E7B1 /* error1.png */; };
@@ -461,9 +463,7 @@
 		50F41321106926B2002A0D5E /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
 		50F41322106926B2002A0D5E /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		50F41323106926B2002A0D5E /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
-		50F414EC1069373D002A0D5E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
-		50F414EE1069373D002A0D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		903C779F1167B0CC0079EE29 /* control-1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-1.caf"; sourceTree = "<group>"; };
 		903C77A01167B0CD0079EE29 /* control-2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-2.caf"; sourceTree = "<group>"; };
@@ -491,6 +491,10 @@
 		903C77CC1167B21C0079EE29 /* ControlLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlLayer.h; sourceTree = "<group>"; };
 		903C77CD1167B21C0079EE29 /* ControlLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlLayer.m; sourceTree = "<group>"; };
 		903C77DA1167B3D40079EE29 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		904113FD154BFE05006503EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		904113FF154BFE09006503EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90411401154BFEA9006503EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		90411403154BFEAB006503EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		90472A2211688C300015B20D /* control-4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-4.caf"; sourceTree = "<group>"; };
 		90472A3D11688DDF0015B20D /* control-5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-5.caf"; sourceTree = "<group>"; };
 		90500CA311689FEB00A3E7B1 /* error1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error1.png; sourceTree = "<group>"; };
@@ -570,6 +574,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				90411403154BFEAB006503EB /* Icon@2x.png */,
+				90411401154BFEA9006503EB /* Icon.png */,
+				904113FF154BFE09006503EB /* Default@2x.png */,
+				904113FD154BFE05006503EB /* Default.png */,
 				90500E431168D74200A3E7B1 /* dist.plist */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,
@@ -883,9 +891,7 @@
 			children = (
 				90472A2611688C400015B20D /* Graphics */,
 				90472A2511688C390015B20D /* Sounds */,
-				50F414EC1069373D002A0D5E /* Default.png */,
 				50F414ED1069373D002A0D5E /* fps_images.png */,
-				50F414EE1069373D002A0D5E /* Icon.png */,
 				50F414EF1069373D002A0D5E /* Info.plist */,
 			);
 			path = Resources;
@@ -1100,7 +1106,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Kontrol" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1116,9 +1126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F414F01069373D002A0D5E /* Default.png in Resources */,
 				50F414F11069373D002A0D5E /* fps_images.png in Resources */,
-				50F414F21069373D002A0D5E /* Icon.png in Resources */,
 				903C77B31167B0D60079EE29 /* control-1.caf in Resources */,
 				903C77B41167B0D60079EE29 /* control-2.caf in Resources */,
 				903C77B51167B0D60079EE29 /* control-3.caf in Resources */,
@@ -1164,6 +1172,10 @@
 				90500D831168B4B100A3E7B1 /* control-chord4-7.caf in Resources */,
 				90500D841168B4B100A3E7B1 /* control-chord4-8.caf in Resources */,
 				90500E441168D74200A3E7B1 /* dist.plist in Resources */,
+				904113FE154BFE05006503EB /* Default.png in Resources */,
+				90411400154BFE09006503EB /* Default@2x.png in Resources */,
+				90411402154BFEA9006503EB /* Icon.png in Resources */,
+				90411404154BFEAB006503EB /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1299,12 +1311,14 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Kontrol;
+				SDKROOT = iphoneos;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -1321,12 +1335,14 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Kontrol;
+				SDKROOT = iphoneos;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -1343,6 +1359,8 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = "cocos2d libraries";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1357,6 +1375,8 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = "cocos2d libraries";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1390,12 +1410,14 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Kontrol;
+				SDKROOT = iphoneos;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = "App Store";
@@ -1411,6 +1433,8 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = "cocos2d libraries";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = "App Store";

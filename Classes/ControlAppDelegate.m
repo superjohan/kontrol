@@ -52,6 +52,10 @@
 		
 		
 	[[CCDirector sharedDirector] runWithScene: [ControlScene scene]];
+    
+    UIViewController *controller = [[UIViewController alloc] init];
+    controller.view.alpha = 0;
+    self.window.rootViewController = controller;
 }
 
 
